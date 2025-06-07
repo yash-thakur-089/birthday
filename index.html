@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Panda! 🎉</title>
+
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/icon/panda_icon.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Enhanced Loading Screen -->
+<div class="loading-screen">
+  <div class="loader-container">
+    <div class="birthday-cake">
+      <div class="cake">
+        <div class="layer top"></div>
+        <div class="layer middle"></div>
+        <div class="layer bottom"></div>
+        <div class="candle">
+          <div class="flame"></div>
+          <div class="glow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <div class="loading-message">
+      <span class="letter">P</span>
+      <span class="letter">r</span>
+      <span class="letter">e</span>
+      <span class="letter">p</span>
+      <span class="letter">a</span>
+      <span class="letter">r</span>
+      <span class="letter">i</span>
+      <span class="letter">n</span>
+      <span class="letter">g</span>
+      <span class="space"></span>
+      <span class="letter">B</span>
+      <span class="letter">i</span>
+      <span class="letter">r</span>
+      <span class="letter">t</span>
+      <span class="letter">h</span>
+      <span class="letter">d</span>
+      <span class="letter">a</span>
+      <span class="letter">y</span>
+      <span class="space"></span>
+      <span class="letter">S</span>
+      <span class="letter">u</span>
+      <span class="letter">r</span>
+      <span class="letter">p</span>
+      <span class="letter">r</span>
+      <span class="letter">i</span>
+      <span class="letter">s</span>
+      <span class="letter">e</span>
+      <span class="letter">!</span>
+    </div>
+    <div class="hint">Just a moment while we prepare something special...</div>
+  </div>
+</div>
+    <!-- 🎵 music + toggle -->
+    <audio id="birthdayMusic" loop preload="auto">
+    <source src="./assets/audio/happy-birthday-220024.mp3" type="audio/mpeg" />
+    </audio>
+
+
+    <!-- Panda-wearing-headphones button -->
+    <button id="musicToggle" class="music-btn" aria-label="Toggle music">
+        <img src="./assets/icon/panda_headphone-removebg-preview.png" alt="Toggle music" class="music-icon" />
+    </button>
+
+    <div class="container">
+        <header>
+            <h1>Happy Birthday Panda! 🎂</h1>
+            <div id="countdown" class="countdown"></div>
+        </header>
+
+        <main>
+            <section class="hero">
+            <div class="photo-frame">
+            <img src="./assets/images/panda_2.0.jpg" alt="Cute Panda" class="panda-img">
+            <div class="polaroid-effect"></div>
+            <div class="photo-stickers">
+                <span class="sticker">🎂</span>
+                <span class="sticker">🎉</span>
+                <span class="sticker">❤️</span>
+            </div>
+            </div>
+                <img src="./assets/images/panda.png" alt="Cute Panda" class="panda-img" />
+                <div class="message">
+                    <h2>June 15th is all about YOU!</h2>
+                    <p>
+                        Dear Panda, <br /><br />
+                        On your special day, I hope you're surrounded by love, laughter, and happiness! You're an amazing friend and we're so lucky to have you in our lives. <br /><br />
+                        Enjoy your day to the fullest! 🎉
+                    </p>
+                    <p class="signature">Love,<br />Your Friends</p>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <h2>Panda's Favourite Things</h2>
+                <div class="favorites">
+                    <div class="item"><div class="icon">🍜</div><p>Yummy Food</p></div>
+                    <div class="item"><div class="icon">🎵</div><p>Listening Music</p></div>
+                    <div class="item"><div class="icon">🐼</div><p>Actual Pandas</p></div>
+                    <div class="item"><div class="icon">🪄</div><p>Magic Tricks</p></div>
+                </div>
+            </section>
+            <section class="gift-section">
+  <h2>Open Your Gift! 🎁</h2>
+  <div class="gift-container">
+    <div class="gift-box" id="giftBox">
+      <div class="box">
+        <div class="lid"></div>
+        <div class="ribbon-horizontal"></div>
+        <div class="ribbon-vertical"></div>
+        <div class="bow-left"></div>
+        <div class="bow-right"></div>
+      </div>
+    </div>
+  </div>
+  <div class="gift-message">Click the box to open your gift!</div>
+</section>
+
+            <section class="wishes">
+                <h2>Birthday Wishes for Panda</h2>
+                <textarea id="wishText" placeholder="Write your birthday wish for Panda here..."></textarea>
+                <button id="addWish">Add Your Wish</button>
+                <div id="wishList"></div>
+            </section>
+        </main>
+
+  
+        
+
+        <footer>
+            <p>Made with ❤️ for Panda's Birthday – June 15th</p>
+            <div id="confetti" class="confetti"></div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
