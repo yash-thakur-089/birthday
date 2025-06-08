@@ -345,7 +345,7 @@ footer {
 .loading-message {
   font-size: 22px;
   font-weight: bold;
-  color: white;
+  color: gold;
   margin-bottom: 15px;
   text-shadow: 0 2px 5px rgba(0,0,0,0.2);
   display: flex;
